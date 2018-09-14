@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width ,initial-scale=1.0, minimum-scale=1.0 ,maximum-scale=1.0">
+    <title>Basic js</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+
+<div class="calculator">
+
+<div class="menu" id="menu">
+<div class="container">
+<ul>
+<li ><a href="">Standard</a></li>
+<li class="active"><a href="">Scietntific</a></li>
+<li><a href="">standard</a></li>
+<li><a href="">standard</a></li>
+</ul>
+</div>
+</div>
+
+<div class="calc">
+<div class="container">
+<span onclick="toggleShow()"><img src="images/menu.png"/></span>
+<h2>Scietntific</h2>
+<div class="cal">
+<input type="text" id="result" value='0' readonly ></br>
+
+<table cellpadding="0">
+
+
+<tr class="main-color main-border">
+<td><button  onclick="calc()" class="button">MC</button></td>
+<td><button  onclick="calc()" class="button">M-</button></td>
+<td><button  onclick="calc()" class="button">MR</button></td>
+<td><button  onclick="calc()" class="button">MS</button></td>
+<td><button  class="button"  onclick="calc('/')">M</button></td>
+</tr>
+
+<tr class="main-color">
+<td><button  onclick="calc()" class="button">x2</button></td>
+<td><button  onclick="calc()" class="button">xy</button></td>
+<td><button  onclick="calc('sin')" class="button">sin</button></td>
+<td><button  onclick="calc('cos')" class="button">cos</button></td>
+<td><button  class="button"  onclick="calc('tan')">tan</button></td>
+</tr>
+
+<tr class="main-color">
+<td><button  onclick="calc()" class="button">?</button></td>
+<td><button  onclick="calc()" class="button">10^x</button></td>
+<td><button  onclick="calc()" class="button">log</button></td>
+<td><button  onclick="calc()" class="button">Exp</button></td>
+<td><button  class="button"  onclick="calc('%')">Mod</button></td>
+</tr>
+
+<tr>
+<td><button  onclick="calc()" class="button">1</button></td>
+<td><button  onclick="Eclear()" class="button">CE</button></td>
+<td><button  onclick="cclear()" class="button">C</button></td>
+<td><button  onclick="calc(9)" class="button">x</button></td>
+<td><button  class="button"  onclick="calc('/')">/</button></td>
+</tr>
+
+<tr>
+<td><button  onclick="calc()" class="button">?</button></td>
+<td><button  onclick="calc(7)" class="button">7</button></td>
+<td><button onclick="calc(8)" class="button">8</button></td>
+<td><button  onclick="calc(9)" class="button">9</button></td>
+<td><button  class="button"  onclick="calc('*')">x</button></td>
+</tr>
+
+<tr>
+<td><button  onclick="calc()" class="button">!n</button></td>
+<td><button  onclick="calc(4)" class="button">4</button></td>
+<td><button  onclick="calc(5)" class="button">5</button></td>
+<td><button  onclick="calc(6)" class="button">6</button></td>
+<td><button  class="button"  onclick="calc('-')">-</button></td>
+</tr>
+<tr>
+<td><button  onclick="calc()" class="button">+-</button></td>
+<td><button  onclick="calc(1)" class="button">1</button></td>
+<td><button  onclick="calc(2)" class="button">2</button></td>
+<td><button  onclick="calc(3)" class="button">3</button></td>
+<td><button  class="button"  onclick="calc('+')">+</button></td>
+</tr>
+
+<tr>
+<td><button  onclick="calc('(')" class="button">(</button></td>
+<td><button  onclick="calc(')')" class="button">)</button></td>
+<td><button  onclick="calc(0)" class="button">0</button></td>
+<td><button  onclick="calc('.')" class="button">.</button></td>
+<td><button  class="button"  onclick="equal()">=</button></td>
+</tr>
+
+</table>
+</div>
+</div>
+</div>
+
+<div class="history">
+<div class="container">
+<span>History</span>
+<span>Memory</span>
+<p id="history">There is no history yet   </p></br>
+</div>
+</div>
+
+</div>
+
+<script src="js/main.js">
+</script>
+</body>
+
+</html>
